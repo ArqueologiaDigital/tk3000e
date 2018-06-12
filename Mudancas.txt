@@ -1,0 +1,106 @@
+Mudanças na versão 2.4:
+
+ - Implementado a opção "colar" texto da área de transferência, com a 
+   combinação de teclas SHIFT+INSERT.
+ - Adicionado opção para acelerar a emulação ao colar texto.
+ - Retirado o suporte à imagens "zipadas" por muitas incompatibilidades.
+ - Adicionado recurso para extrair o programa BASIC atual da memória
+   para a área de transferência.
+ - Adicionado opção para importação de arquivos *.b (formato APPLEDOS).
+ - A tecla SCROLL LOCK não precisa ser mais mantida apertada para ace-
+   lerar a emulação.
+ - Começado a emulação da Mockingboard.
+
+Mudancas na versão 2.3beta:
+
+ - Corrigido um bug na emulação do HD (Mass Storage), o mesmo informava
+   quantidade errada de blocos.
+ - Código do firmware da placa de relógio foi reformulado e melhorado.
+ - Alterado a profundidade de cores do arquivo TK3000e.BMP
+
+Mudancas na versão 2.2beta:
+
+ - Corrigido um bug nos caracteres quando se está no modo de 80 colunas
+   no modo monocromático.
+ - Melhorado código do firmware do HD
+ - Resolvido um bug ao apertar F6 ou F7 quando a interface DiskII não
+   estiver em funcionamento.
+ - Consertado um bug na emulação do mouse, a interrupção não estava
+   funcionando. O firmware do mouse também foi mudado.
+ - Consertado um bug na geração de interrupção do sistema.
+ - Terminado a emulação do mouse.
+ - Resolvido um bug quando o emulador reiniciava e acusava erro nos
+   slots, dizendo que as placas já estavam inseridas.
+
+Mudancas na versão 2.1beta:
+
+ - Mudado internamente o esquema de acesso a memória, agora a memória
+   auxiliar funciona e os slots que não tenham placas inseridas retornam
+   valores randômicos ao se ler o slot.
+ - Alterado as definições dos caracteres e o código para manipular as
+   novas definições de caracteres.
+ - Consertado um bug: Ao resetar os caracteres alternativos não eram
+   corrigidos.
+ - Remapeado as teclas de funções.
+ - Adicionado opção para gerar Scanlines.
+ - Adicionado Drag and Drop de imagens de disco.
+
+Mudancas na versão 2.0beta:
+
+ - Alterado todo o código para ser compilado com o compilador C++
+ - Alterado código para usar o DirectX 9
+ - Usado parte do código do emulador Applewin por Tom Charlesworth
+ - Melhorado a contagem de ciclos da máquina
+ - Emulacao do Joystick está 100% perfeito
+ - Melhorado emulação do speaker usando o DirectSound
+ - Adicionado opção de emulação do modo TV na emulação do vídeo
+ - Adicionado modo Full Screen (F6)
+ - Resolvido um BUG nos opcodes ADC e SBC no modo decimal
+ - Resolvido um BUG no opcode BRK
+ - Melhorado a contagem de ciclos para os opcodes BRANCH Bxx e para
+   a mudança de página nos opcodes que tem os modos de endereçamento
+   ABSX, ABXY e INDY
+ - Mudado o esquema de leitura de imagens de disco. Ao abrir uma
+   imagem de disco é copiado para memória e só é salva de volta ao
+   arquivo ao fechar a imagem.
+ - Melhorado o suporte a imagens zipadas, ao abrir uma imagem zipada
+   é descompactada para a memória e ao fechar a imagem é compactada
+   novamente dentro do ZIP, perdendo outros arquivos do ZIP
+ - Adicionado controle de volume do som.
+ - Resolvido um bug na tela de escolha dos slots, quando o firmware não
+   existe a tela aceitava a escolha do usuário, ocorrendo erro.
+ - Resolvido problema quando o usuário coloca duas placas iguais em
+   slots diferentes, o emulador não deixa.
+
+Mudanças na versão 1.2rc1:
+
+ - Mudado o código fonte para ser mais portável
+ - Arrumado uns bugs da serial, IDE, HD e do módulo central
+ - Corrigido um bug no modo de endereçamento Absoluto Imediato Indexado da CPU (ABSIINDX)
+ - As teclas Caps e Mode podem ser mudadas clicando sobre seus ícones
+ - Adicionado suporte a imagens zipadas (Ao abrir uma imagem zipada ocorre a extração do
+   primeiro arquivo no diretório do arquivo zip, e esse arquivo é aberto.
+
+Mudanças na versão 1.1:
+
+ - Lancada Versão Estável
+ - Completada a emulação da placa CP/M Z80
+ - Adicionada emulação completa da interface IDE do Richard Dreher
+
+Mudanças na versão 1.1rc1:
+
+ - Adicionado emulação da placa CP/M Z80 (Ainda não está completa)
+ - Alguns pequenos consertos no código
+
+Mudanças na versão 1.0rc1:
+
+ - Separação dos arquivos includes
+ - Emulação parcial da TKCLOCK
+ - Escolha pelo usuário de qual placa será encaixada nos slots
+ - Excluido o arquivo 'slots.rom' e acrescentado arquivos de firmware 'firmware_*.rom'
+
+Mudanças na versão 0.2rc1:
+
+ - Implementado Acesso a ROM Extendida dos slots
+ - Escolha do número de volume para disquetes
+ - Implementado Geração de IRQs

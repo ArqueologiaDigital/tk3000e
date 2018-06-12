@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\DXSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\TK3000e.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\TK3000e.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0416</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\TK3000e.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\TK3000e.exe</OutputFile>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;dsound.lib;dxguid.lib;version.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>c:\dxsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\TK3000e.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\TK3000e.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0416</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\TK3000e.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\TK3000e.exe</OutputFile>
+      <AdditionalDependencies>comctl32.lib;winmm.lib;dsound.lib;dxguid.lib;version.lib;strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="recursos\resource.h" />
+    <ClInclude Include="src\AY8910.h" />
+    <ClInclude Include="src\cpu.h" />
+    <ClInclude Include="src\debug.h" />
+    <ClInclude Include="src\disco.h" />
+    <ClInclude Include="src\disco_rigido.h" />
+    <ClInclude Include="src\ide.h" />
+    <ClInclude Include="src\imagem.h" />
+    <ClInclude Include="src\impressora.h" />
+    <ClInclude Include="src\janela.h" />
+    <ClInclude Include="src\joystick.h" />
+    <ClInclude Include="src\memoria.h" />
+    <ClInclude Include="src\mockingboard.h" />
+    <ClInclude Include="src\mouse.h" />
+    <ClInclude Include="src\registro.h" />
+    <ClInclude Include="src\relogio.h" />
+    <ClInclude Include="src\serial.h" />
+    <ClInclude Include="src\SoundCore.h" />
+    <ClInclude Include="src\Speaker.h" />
+    <ClInclude Include="src\SSI263Phonemes.h" />
+    <ClInclude Include="src\stdhdr.h" />
+    <ClInclude Include="src\tape.h" />
+    <ClInclude Include="src\teclado.h" />
+    <ClInclude Include="src\timer.h" />
+    <ClInclude Include="src\tk3000e.h" />
+    <ClInclude Include="src\tkclock.h" />
+    <ClInclude Include="src\utilitarios.h" />
+    <ClInclude Include="src\video.h" />
+    <ClInclude Include="src\z80codes.h" />
+    <ClInclude Include="src\z80daa.h" />
+    <ClInclude Include="src\z80emu.h" />
+    <ClInclude Include="src\z80io.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="recursos\CapsOff.bmp" />
+    <CustomBuild Include="recursos\CapsOn.bmp" />
+    <CustomBuild Include="recursos\CHARSET.bmp" />
+    <CustomBuild Include="recursos\Charset4.bmp" />
+    <CustomBuild Include="recursos\DISK.ICO" />
+    <CustomBuild Include="recursos\DiskOff.bmp" />
+    <CustomBuild Include="recursos\DiskRead.bmp" />
+    <CustomBuild Include="recursos\DiskWrite.bmp" />
+    <CustomBuild Include="recursos\ModeOff.bmp" />
+    <CustomBuild Include="recursos\ModeOn.bmp" />
+    <CustomBuild Include="recursos\TK3000e.ico" />
+    <CustomBuild Include="recursos\Z80Off.bmp" />
+    <CustomBuild Include="recursos\Z80On.bmp" />
+    <CustomBuild Include="COPYING.txt" />
+    <CustomBuild Include="criadist.bat">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Instalador.nsi">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Leiame.txt" />
+    <CustomBuild Include="Licenca.txt" />
+    <CustomBuild Include="Mudancas.txt" />
+    <CustomBuild Include="Tarefas.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="recursos\TK3000e.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">recursos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">recursos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AY8910.cpp" />
+    <ClCompile Include="src\cpu.cpp" />
+    <ClCompile Include="src\debug.cpp" />
+    <ClCompile Include="src\disco.cpp" />
+    <ClCompile Include="src\disco_rigido.cpp" />
+    <ClCompile Include="src\ide.cpp" />
+    <ClCompile Include="src\imagem.cpp" />
+    <ClCompile Include="src\impressora.cpp" />
+    <ClCompile Include="src\janela.cpp" />
+    <ClCompile Include="src\joystick.cpp" />
+    <ClCompile Include="src\memoria.cpp" />
+    <ClCompile Include="src\Mockingboard.cpp" />
+    <ClCompile Include="src\mouse.cpp" />
+    <ClCompile Include="src\registro.cpp" />
+    <ClCompile Include="src\relogio.cpp" />
+    <ClCompile Include="src\serial.cpp" />
+    <ClCompile Include="src\SoundCore.cpp" />
+    <ClCompile Include="src\Speaker.cpp" />
+    <ClCompile Include="src\tape.cpp" />
+    <ClCompile Include="src\teclado.cpp" />
+    <ClCompile Include="src\timer.cpp" />
+    <ClCompile Include="src\tk3000e.cpp" />
+    <ClCompile Include="src\tkclock.cpp" />
+    <ClCompile Include="src\utilitarios.cpp" />
+    <ClCompile Include="src\video.cpp" />
+    <ClCompile Include="src\z80emu.cpp" />
+    <ClCompile Include="src\z80io.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
