@@ -24,8 +24,7 @@ INSTALAÇÃO:
   Execute o instalador(TK3000e-(versão)-Instalador.exe) e siga as instruções na tela.
 
 BUGS:
-  Favor ler o arquivo "Tarefas.txt"
-  Qualquer bug achado no software favor entrar em contato com o autor.
+  https://github.com/ArqueologiaDigital/tk3000e/issues
 
 CONTATANDO O AUTOR:
   Favor enviar um e-mail para fbelavenuto@gmx.net

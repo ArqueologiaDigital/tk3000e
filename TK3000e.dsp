@@ -430,10 +430,6 @@ SOURCE=.\Licenca.txt
 
 SOURCE=.\Mudancas.txt
 # End Source File
-# Begin Source File
-
-SOURCE=.\Tarefas.txt
-# End Source File
 # End Group
 # End Target
 # End Project

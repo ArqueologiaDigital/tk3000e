@@ -178,9 +178,6 @@
     <CustomBuild Include="Mudancas.txt">
       <Filter>Textos</Filter>
     </CustomBuild>
-    <CustomBuild Include="Tarefas.txt">
-      <Filter>Textos</Filter>
-    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AY8910.cpp">

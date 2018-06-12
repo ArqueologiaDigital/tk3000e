@@ -188,7 +188,6 @@
     <CustomBuild Include="Leiame.txt" />
     <CustomBuild Include="Licenca.txt" />
     <CustomBuild Include="Mudancas.txt" />
-    <CustomBuild Include="Tarefas.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="recursos\TK3000e.rc">

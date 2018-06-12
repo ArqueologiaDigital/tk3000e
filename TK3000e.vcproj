@@ -941,10 +941,6 @@
 				RelativePath="Mudancas.txt"
 				>
 			</File>
-			<File
-				RelativePath="Tarefas.txt"
-				>
-			</File>
 		</Filter>
 	</Files>
 	<Globals>
